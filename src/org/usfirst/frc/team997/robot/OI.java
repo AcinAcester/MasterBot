@@ -14,6 +14,7 @@ public class OI {
 	public Joystick joy;
 
 	public OI() {
+		
 		joy = new Joystick(0); 
 	} 	
 			public double getlefty() {

@@ -1,6 +1,7 @@
 package org.usfirst.frc.team997.robot.subsystems;
 
 import org.usfirst.frc.team997.robot.RobotMap;
+import org.usfirst.frc.team997.robot.commands.TankDrive;
 
 import edu.wpi.first.wpilibj.VictorSP;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -22,7 +23,7 @@ public class DriveTrain extends Subsystem {
 	}
     
     public void initDefaultCommand() {
-    	setDefaultCommand(new Tankdrive());
+    	setDefaultCommand(new TankDrive());
     }
 }
 
