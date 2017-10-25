@@ -2,7 +2,9 @@ package org.usfirst.frc.team997.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
+import org.usfirst.frc.team997.robot.commands.Blast;
 import org.usfirst.frc.team997.robot.commands.ExampleCommand;
 
 /**
@@ -12,10 +14,14 @@ import org.usfirst.frc.team997.robot.commands.ExampleCommand;
 public class OI {
 	
 	public Joystick joy;
-
+	public JoystickButton butt; 
+	public JoystickButton trig;
+	
 	public OI() {
 		
+		butt = new JoystickButton(joy,0); 
 		joy = new Joystick(0); 
+		butt.whenPressed(new Blast());
 	} 	
 			public double getlefty() {
 			return joy.getRawAxis(1);
@@ -23,5 +29,7 @@ public class OI {
 			public double getrighty() {
 			return joy.getRawAxis(2);
 	}
+			
+		
 
 }

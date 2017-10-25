@@ -7,9 +7,12 @@ package org.usfirst.frc.team997.robot;
  * floating around.
  */
 public class RobotMap {
+	
 	public static class Ports {
 		public static final int
-		LeftMotorPort = 0,
-		RightMotorPort = 1;
+		
+		leftMotorPort = 0,
+		rightMotorPort = 1;
+		
 	}
 }
